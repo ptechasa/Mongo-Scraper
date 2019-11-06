@@ -11,7 +11,7 @@ var cheerio = require("cheerio");
 
 var bodyParser = require("body-parser");
 
-let ejs = require('ejs')
+var ejs = require('ejs')
 
 //Set up the Express app to handle data parsing
 app.use(bodyParser.urlencoded({ extended: true }))
@@ -38,7 +38,6 @@ app.get('/', function (req, res) {
     request.get("https://techcrunch.com/gadgets/", function (error, response, body) {
 
         var $ = cheerio.load(body);
-        // var results = [];
 
         $("h2.post-block__title").each(function (i, element) {
             var title = $(element).children().text();
@@ -83,6 +82,7 @@ function updateScrapedData(title, summary, link) {
 
             }
         },
+        //If set to true, creates a new document when no document matches the query criteria.
         { upsert: true },
     );
 };

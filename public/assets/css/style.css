@@ -1,4 +1,12 @@
-.table-wrapper {
+h4 {
+    font-family: 'Bungee Inline', cursive;
+}
+
+body {
+    background-color: blue;
+}
+
+/* .table-wrapper {
     margin-top: 50px;
 }
 
@@ -9,5 +17,5 @@
 
 .add-article-form {
     margin-top: 50px;
-}
+} */
 
