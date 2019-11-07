@@ -2,10 +2,10 @@
 
 Mongo Scraper is a web app that lets users view and leave comments on the latest news. In this web app, we scrape it from TechCrunch website.
 
-##Tech Gadgets Scraper
+## Tech Gadgets Scraper
 https://tech-gadgets-scraper.herokuapp.com/
 
-##Technologies that we use:
+## Technologies that we use:
 * ejs 
 * Bootstrap 4
 * JavaScript
